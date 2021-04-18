@@ -1,0 +1,97 @@
+@import "global";
+
+main {
+  @include flex(center, center, row);
+  padding: 10rem 10rem 10rem 10rem;
+}
+
+.card {
+  @include flex(center, center, row);
+  background: $primary_desaturated_blue;
+  border-radius: 1.5rem;
+
+  span {
+    color: $primary_soft_violet;
+  }
+
+  .stat-text {
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+    h1 {
+      color: $neutral_white;
+      font-size: $header2;
+    }
+
+    p {
+      margin-top: 3rem;
+      color: $neutral_slighlty_transparent_white_paragraph;
+      font-size: $header5;
+      line-height: 2.5rem;
+    }
+
+    .stats-numbers {
+      @include flex(space-between, center, row);
+      margin-top: 5rem;
+
+      h5 {
+        color: $neutral_white;
+        font-size: $header3;
+      }
+
+      p {
+        margin-top: 0.5rem;
+        color: $neutral_slighlty_transparent_white_paragraph;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .img-stats {
+    img {
+      filter: invert(15%) sepia(15%) saturate(3000%) hue-rotate(230deg)
+        brightness(50%) contrast(90%);
+      border-top-right-radius: 1.5rem;
+      border-bottom-right-radius: 1.5em;
+    }
+  }
+}
+
+//Media Query
+@media screen and (max-width: 1300px) {
+  .card {
+    flex-wrap: wrap-reverse;
+
+    .stat-text {
+      margin-top: 3rem;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      margin-bottom: 10rem;
+
+      .stats-numbers {
+        @include flex(space-between, center, column);
+
+        .company {
+          margin-top: 3rem;
+        }
+        .templates {
+          margin-top: 3rem;
+        }
+
+        .queries {
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    .img-stats {
+      img {
+        border-radius: 0rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        max-width: 100%;
+        width: 100vw;
+      }
+    }
+  }
+}

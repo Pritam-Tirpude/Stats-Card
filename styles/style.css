@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: #090b1a;
+  font-family: "Inter", sans-serif, "Lexend Deca", sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10rem 10rem 10rem 10rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #1b1938;
+  border-radius: 1.5rem;
+}
+
+.card span {
+  color: #aa5cdb;
+}
+
+.card .stat-text {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.card .stat-text h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.card .stat-text p {
+  margin-top: 3rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.card .stat-text .stats-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5rem;
+}
+
+.card .stat-text .stats-numbers h5 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.card .stat-text .stats-numbers p {
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+.card .img-stats img {
+  -webkit-filter: invert(15%) sepia(15%) saturate(3000%) hue-rotate(230deg) brightness(50%) contrast(90%);
+          filter: invert(15%) sepia(15%) saturate(3000%) hue-rotate(230deg) brightness(50%) contrast(90%);
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5em;
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .card .stat-text {
+    margin-top: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+  }
+  .card .stat-text .stats-numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .stat-text .stats-numbers .company {
+    margin-top: 3rem;
+  }
+  .card .stat-text .stats-numbers .templates {
+    margin-top: 3rem;
+  }
+  .card .stat-text .stats-numbers .queries {
+    margin-top: 3rem;
+  }
+  .card .img-stats img {
+    border-radius: 0rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    max-width: 100%;
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
